@@ -16,7 +16,7 @@ module OmniAuth
           :identity_url  => '/smi/api/identity/mine'}
 
       option :production_client_options, {
-          :site          => 'https://smiapi.samaritanministries.org/',
+          :site          => 'https://platformapi.samaritanministries.org/',
           :authorize_url => '/asrv/smi/oauth/authorize',
           :token_url     => '/asrv/smi/oauth/token',
           :identity_url  => '/smi/api/identity/mine'}
