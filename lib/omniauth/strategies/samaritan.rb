@@ -13,13 +13,13 @@ module OmniAuth
           :site          => 'https://sandbox.smchcn.net/',
           :authorize_url => '/asrv/smi/oauth/authorize',
           :token_url     => '/asrv/smi/oauth/token',
-          :identity_url  => '/SmiIdentity/api/identity/mine'}
+          :identity_url  => '/smi/api/identity/mine'}
 
       option :production_client_options, {
-          :site          => 'https://api.smchcn.net/',
+          :site          => 'https://smiapi.samaritanministries.org/',
           :authorize_url => '/asrv/smi/oauth/authorize',
           :token_url     => '/asrv/smi/oauth/token',
-          :identity_url  => '/SmiIdentity/api/identity/mine'}
+          :identity_url  => '/smi/api/identity/mine'}
 
       def client_options
         client_options = options.client_options
