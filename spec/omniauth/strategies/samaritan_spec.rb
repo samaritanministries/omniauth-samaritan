@@ -26,24 +26,14 @@ describe OmniAuth::Strategies::Samaritan do
   end
 
   describe '#client_options' do
-    it 'has correct site for sandbox' do
-      @options = {:environment => :sandbox}
-      subject.client.site.should eq('https://sandbox.smchcn.net/')
-    end
-
-    it 'has correct site for production' do
-      @options = {:environment => :production}
-      subject.client.site.should eq('https://api.smchcn.net/')
-    end
-
     it 'has correct authorize_url' do
       @options = {:environment => :production}
-      subject.client.options[:authorize_url].should eq('/asrv/smi/oauth/authorize')
+      subject.client.options[:authorize_url].should eq('https://accounts.samaritanministries.org/auth')
     end
 
     it 'has correct token_url' do
       @options = {:environment => :production}
-      subject.client.options[:token_url].should eq('/asrv/smi/oauth/token')
+      subject.client.options[:token_url].should eq('https://accounts.samaritanministries.org/auth/smi/oauth/token')
     end
 
     describe "overrides" do
@@ -92,7 +82,7 @@ describe OmniAuth::Strategies::Samaritan do
       OAuth2::Client.new('abc', 'def') do |builder|
         builder.request :url_encoded
         builder.adapter :test do |stub|
-          stub.get('/SmiIdentity/api/identity/mine') {|env| [200, {'content-type' => 'application/json'}, '{"id": "12345"}']}
+          stub.get('/smi/api/identity/mine') {|env| [200, {'content-type' => 'application/json'}, '{"id": "12345"}']}
         end
       end
     end

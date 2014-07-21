@@ -10,16 +10,14 @@ module OmniAuth
       option :client_options, {}
 
       option :sandbox_client_options, {
-          :site          => 'https://sandbox.smchcn.net/',
-          :authorize_url => '/asrv/smi/oauth/authorize',
-          :token_url     => '/asrv/smi/oauth/token',
-          :identity_url  => '/smi/api/identity/mine'}
+          :authorize_url => 'https://sandbox.smchcn.net/asrv/smi/oauth/authorize',
+          :token_url     => 'https://sandbox.smchcn.net/asrv/smi/oauth/token',
+          :identity_url  => 'https://sandbox.smchcn.net/smi/api/identity/mine'}
 
       option :production_client_options, {
-          :site          => 'https://platformapi.samaritanministries.org/',
-          :authorize_url => '/asrv/smi/oauth/authorize',
-          :token_url     => '/asrv/smi/oauth/token',
-          :identity_url  => '/smi/api/identity/mine'}
+          :authorize_url => 'https://accounts.samaritanministries.org/auth',
+          :token_url     => 'https://accounts.samaritanministries.org/auth/smi/oauth/token',
+          :identity_url  => 'https://platformapi.samaritanministries.org/smi/api/identity/mine'}
 
       def client_options
         client_options = options.client_options
