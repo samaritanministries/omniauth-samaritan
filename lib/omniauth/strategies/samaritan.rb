@@ -15,7 +15,7 @@ module OmniAuth
           :identity_url  => 'https://sandbox.smchcn.net/smi/api/identity/mine'}
 
       option :production_client_options, {
-          :authorize_url => 'https://accounts.samaritanministries.org/auth',
+          :authorize_url => 'https://accounts.samaritanministries.org/auth/smi/oauth/authorize',
           :token_url     => 'https://accounts.samaritanministries.org/auth/smi/oauth/token',
           :identity_url  => 'https://platformapi.samaritanministries.org/smi/api/identity/mine'}
 
