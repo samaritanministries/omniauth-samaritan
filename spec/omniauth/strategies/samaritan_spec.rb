@@ -28,7 +28,7 @@ describe OmniAuth::Strategies::Samaritan do
   describe '#client_options' do
     it 'has correct authorize_url' do
       @options = {:environment => :production}
-      subject.client.options[:authorize_url].should eq('https://accounts.samaritanministries.org/auth')
+      subject.client.options[:authorize_url].should eq('https://accounts.samaritanministries.org/auth/smi/oauth/authorize')
     end
 
     it 'has correct token_url' do
