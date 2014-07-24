@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'omniauth', '~> 1.0'
 
   gem.authors       = ["Doug Bradbury", "Ben Voss"]
-  gem.email         = ["smi@8thlight.com"]
+  gem.email         = ["smi@8thlight.com", "chandlerroth@smchcn.net"]
   gem.description   = %q{A Samaritan OAuth2 strategy for OmniAuth 1.x.}
   gem.summary       = %q{A Samaritan OAuth2 strategy for OmniAuth 1.x}
   gem.homepage      = "http://docs.samaritanministries.org/ruby-oauth/"
