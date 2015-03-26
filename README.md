@@ -1,4 +1,5 @@
 # OmniAuth Samaritan OAuth2 Strategy
+[![Build Status](https://travis-ci.org/samaritanministries/omniauth-samaritan.svg?branch=master)](https://travis-ci.org/samaritanministries/omniauth-samaritan)
 
 Strategy to authenticate with Samaritan via OAuth2 in OmniAuth.
 
