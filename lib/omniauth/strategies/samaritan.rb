@@ -10,9 +10,9 @@ module OmniAuth
       option :client_options, {}
 
       option :sandbox_client_options, {
-          :authorize_url => 'https://sandbox.smchcn.net/asrv/smi/oauth/authorize',
-          :token_url     => 'https://sandbox.smchcn.net/asrv/smi/oauth/token',
-          :identity_url  => 'https://sandbox.smchcn.net/smi/api/identity/mine'}
+          :authorize_url => 'https://dev-accounts.smchcn.net/Auth/smi/oauth/authorize',
+          :token_url     => 'https://dev-accounts.smchcn.net/Auth/smi/oauth/token',
+          :identity_url  => 'https://dev-platformapi.smchcn.net/smi/api/identity/mine'}
 
       option :production_client_options, {
           :authorize_url => 'https://accounts.samaritanministries.org/auth/smi/oauth/authorize',
